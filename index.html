@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"/>
+      <link rel="stylesheet" type="text/css" href="./styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/9ecc7119b8.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+
+  <body>   
+
+
+    <div class="app">
+      <div class="search-bar">
+        <button id="pinpoint"><i class="fas fa-map-marker-alt" alt="Current Location"></i></button>
+        <form id="search-engine">
+          <input
+            type="search/text"
+            id="city-search"
+            name="city-search"
+            autocomplete="off"
+            autofocus="on"
+            placeholder="Enter a City..."
+          />
+          <button type="submit" value="search" id="search-button"/><i class="fas fa-search"></i></button>
+        </form>
+        </div>
+
+
+        <div class="container widget">
+          <div class="row date-time">
+            <div class="col date">
+              <p id="current-date"> </p>
+            </div>
+            <div class="col time">
+              <p id="current-time"> </p>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col current-city">
+              <h1 id="current-city"> </h1>
+                <ul>
+                  <li id="condition"> </li>
+                  <li id="current-temp"> </li>
+                </ul>
+            </div>
+            <div class="col-md-auto weather-icon">
+              <img src="" alt="" class="icon" id="icon" />
+            </div>
+            <div class="col weather-details">
+              <ul>
+                <li id="humidity"></li>
+                <li id="windspeed"></li>
+              </ul>
+
+              <div class="conversion">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-warning active" id="celsius">
+                    <input type="radio" name="options">ºC
+                  </label>
+                  <label class="btn btn-warning" id="fahrenheit">
+                    <input type="radio" name="options" >ºF
+                  </label>
+                  
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      
+
+
+      <div class="container forecast">
+        <div class="row row-cols-5" id="forecast">
+          <div class="col">
+            <h5> </h5>
+            <img src=" "/>
+            <p><b id="maxtemp"> º</b> <span id="mintemp">º</span></p>
+          </div>
+<!--
+          <div class="col">
+            <h5> </h5>
+            <img src=" "/>
+            <p> </p>
+          </div>
+
+          <div class="col">
+            <h5> </h5>
+            <img src=" "/>
+            <p> </p>
+          </div>
+
+          <div class="col">
+            <h5> </h5>
+            <img src=" "/>
+            <p> </p>
+          </div>
+
+          <div class="col">
+            <h5> </h5>
+            <<img src=" "/>
+            <p> </p>
+          </div>
+-->
+        </div>
+      </div>
+
+    </div>
+    </div>
+<footer>
+  <a href=" ">Open-Source Code</a> by Jackie Scott | 2020
+</footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
